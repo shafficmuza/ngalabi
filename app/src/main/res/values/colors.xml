@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#3F51B5</color>
+    <color name="primaryDark">#303F9F</color>
+    <color name="primaryTransparent">#1F2196f3</color>
+    <color name="accent">#03A9F4</color>
+
+    <color name="drawerBackground">#ffffff</color>
+    <color name="drawerText">#424242</color>
+
+    <color name="statusBarLight">#eeeeee</color>
+    <color name="navigationBarDark">#606060</color>
+
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+
+
+    <color name="colorPrimary">#F44336</color>
+    <color name="colorPrimaryDark">#457dca</color>
+    <color name="colorPrimaryGreen">#4CAF50</color>
+    <color name="colorAccent">#4388B0E7</color>
+    <color name="colorPrimaryBlack">#000000</color>
+    <color name="colorPrimaryTop">#66F44336</color>
+    <color name="colorPrimaryYello">#EED00B</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorPrimaryBlue">#FF457DCA</color>
+    <color name="brown">#c13804</color>
+
+
+</resources>

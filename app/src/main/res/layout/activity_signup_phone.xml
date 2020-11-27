@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SignupPhone"
+    android:background="@color/brown">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/lion"
+        >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_below="@id/relativeLayout"
+            android:layout_marginTop="-50dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="@string/enter_your_phone"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="@color/colorWhite" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+            <Spinner
+                android:id="@+id/spinnerCountries"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite" />
+
+            <EditText
+                android:id="@+id/editTextPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="@color/colorWhite"
+                android:digits="0123456789"
+                android:hint="@string/enter_phone"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:padding="10dp"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonContinue"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearLayout"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button_rounded_green"
+            android:text="Continue"
+            android:textAllCaps="false"
+            android:textColor="#ffffff" />
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/brown"
+    tools:context=".activity.VerifyPhoneActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/lat">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_below="@id/relativeLayout"
+            android:layout_marginTop="-50dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/waitcodeSent"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="#CEFF03" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:text="@string/codeSents"
+            android:textAlignment="center"
+            android:textColor="#FDFDFD" />
+
+        <EditText
+            android:id="@+id/editTextCode"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView1"
+            android:layout_centerHorizontal="true"
+            android:digits="0123456789"
+            android:hint="Enter code"
+            android:inputType="phone"
+            android:maxLength="6"
+            android:textColor="@color/colorPrimaryBlack"
+            android:textColorHint="@color/colorPrimaryBlack" />
+
+
+        <Button
+            android:id="@+id/buttonSignIn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextCode"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_rounded_green"
+            android:text="@string/verifyCode"
+            android:textAllCaps="false"
+            android:textColor="#ffffff" />
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonSignIn"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

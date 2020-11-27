@@ -1,0 +1,68 @@
+buildscript {
+    repositories {
+        maven { url 'https://plugins.gradle.org/m2/' }
+    }
+    dependencies {
+        classpath 'gradle.plugin.com.onesignal:onesignal-gradle-plugin:[0.12.6, 0.99.99]'
+    }
+}
+
+apply plugin: 'com.onesignal.androidsdk.onesignal-gradle-plugin'
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion '29.0.2'
+
+    defaultConfig {
+        applicationId "com.ngalabi.mobileapp"
+        minSdkVersion 16
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+
+        manifestPlaceholders = [
+                onesignal_app_id               : '3c73dcaa-f1a7-4be0-ac50-c59afbc00107',
+                onesignal_google_project_number: 'REMOTE']
+    }
+    signingConfigs {
+        release {
+            storeFile file("keystore.jks")
+            storePassword "e8Qypdjjxt7S2f"
+            keyAlias "keystore"
+            keyPassword "e8Qypdjjxt7S2f"
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+    dexOptions {
+        preDexLibraries = false
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.android.support:appcompat-v7:29.0.0'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'com.google.firebase:firebase-analytics:17.6.0'
+    //implementation "com.google.android.gms:play-services-gcm:$gps_version"
+    //implementation "com.google.android.gms:play-services-ads:$gps_version"
+    //implementation "com.google.android.gms:play-services-analytics:$gps_version"
+    implementation 'com.onesignal:OneSignal:3.15.4'
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'com.google.firebase:firebase-ads:19.5.0'
+    implementation 'com.google.android.gms:play-services-ads:19.5.0'
+    implementation 'com.google.firebase:firebase-auth:19.4.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.2'
+
+}
+
+apply plugin: 'com.google.gms.google-services'

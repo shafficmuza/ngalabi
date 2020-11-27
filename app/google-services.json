@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "470610893716",
+    "firebase_url": "https://ngalabi-safaris.firebaseio.com",
+    "project_id": "ngalabi-safaris",
+    "storage_bucket": "ngalabi-safaris.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:470610893716:android:eba605c0dd9d19cf228d81",
+        "android_client_info": {
+          "package_name": "com.ngalabi.mobileapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "470610893716-7i5o9t8avfa3h1sftsau9i0fvar7ms2j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdE4pBprMaTIjCdgFWyP2ZxRMRyMzJ3uA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "470610893716-7i5o9t8avfa3h1sftsau9i0fvar7ms2j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
